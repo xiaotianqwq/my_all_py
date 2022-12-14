@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <!--创建一个表单域-->
+    <form methon="POST" name="name1">
+    <!--name和value是每一个表单元素都应该有的 主要是给后台看的-->
+    <!--name是表单元素的名字 要求单选框和多选框分别都要有相同的name值-->
+    <!--input输入表单元素-->
+        <!--type=txet文本框 用户可以输入任何文字-->
+        <!--文本框可以设置maxlength属性，设置最长输入字符数-->
+        <!--value默认的值-->
+        用户名:<input type="text" name="username" value="请输入用户名" maxlength="6"><br>
+        <!--password密码框 用户看不见密码-->
+        密码:<input type="password" name="pwd"><br>
+
+        <!--单选框和多选框可以设置checkbox属性，当页面打开时默认选中这个按钮-->
+        <!--type=radio单选框-->
+        <!--nema是表单的名字 单选框必须有相同的名字才能实现多选一-->
+        性别:<input type="radio" name="sex" value="男" checked="checked">男
+            <input type="radio" name="sex" value="女">女<br>
+        <!--type=checkbox多选框-->
+        爱好:<input type="checkbox" name="hobby" value="苹果" checked="checked">苹果
+            <input type="checkbox" name="hobby" value="香蕉">香蕉
+            <input type="checkbox" name="hobby" value="榴莲">榴莲<br>
+        
+        <!--type=submit提交按钮 将表单数据提交给后台-->
+        <input type="submit">
+        <!--type=reset重置按钮-->
+        <input type="reset">
+        <!--普通按钮 type=button  后期搭配JS结合使用-->
+        <input type="button" value="获取短信验证码"><br>
+        <!--type=file 文件上传按钮-->
+        <input type="file"><br>
+    </form>
+</body>
+</html>

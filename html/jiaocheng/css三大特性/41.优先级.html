@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优先级</title>
+    <style>
+        /*!important>行内样式>ID选择器>类选择器，伪类选择器>元素选择器>继承*/
+
+        /*父亲的权重是100*/
+        #pinks {
+            color: red;
+        }
+        /*p继承的权重为0*/
+        p {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+<div id="pinks">
+    <p>1354684</p>
+</div>
+</body>
+</html>

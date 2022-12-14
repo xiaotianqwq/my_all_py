@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>权重叠加</title>
+    <style>
+        /*权重 0,0,0,1(ul) + 0,0,0,1(li) = 0,0,0,2*/
+        ul li {
+            color: red;
+        }
+        /*权重 0,0,0,1*/
+        li {
+            color: green;
+        }
+        /*权重 0,0,1,0(.nav) + 0,0,0,1(li) = 0,0,1,1*/
+        .nav li {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+<ul class="nav">
+    <li>789748</li>
+    <li>789748</li>
+    <li>789748</li>
+</ul>
+</body>
+</html>

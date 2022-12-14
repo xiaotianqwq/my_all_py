@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+
+    <!--<tr>表格中的一行  <td>是一行中的一个单元格-->
+    <tr><td>姓名</td> <td>性别</td> <td>年龄</td></tr>
+    <tr><td>刘德华</td> <td>男</td> <td>40</td></tr>
+    <tr><td>张学友</td> <td>男</td> <td>50</td></tr>
+
+    <h3>表头单元格</h3>
+    <!--<th>表格中的表头-->
+    <tr><th>姓名</th> <th>性别</th> <th>年龄</th></tr>
+    <tr><td>刘德华</td> <td>男</td> <td>40</td></tr>
+    <tr><td>张学友</td> <td>男</td> <td>50</td></tr>
+</table>
+
+
+    <h3>表格属性</h3>
+    <h4>aling对齐方式</h4>
+<table align="center">
+    <tr><th>姓名</th> <th>性别</th> <th>年龄</th></tr>
+    <tr><td>刘德华</td> <td>男</td> <td>40</td></tr>
+    <tr><td>张学友</td> <td>男</td> <td>50</td></tr>
+</table>
+
+    <h4>border边框  cellpadding文字与边框的距离  cellspacing单元格的空白距离  width表格宽的  height表格高度</h4>
+<table border="1" cellpadding="20" cellspacing="0" width="500" height="500">
+    <tr><th>姓名</th> <th>性别</th> <th>年龄</th></tr>
+    <tr><td>刘德华</td> <td>男</td> <td>40</td></tr>
+    <tr><td>张学友</td> <td>男</td> <td>50</td></tr>
+</table>
+
+    <h3>合并单元格</h3>
+<table border="1" cellpadding="20" cellspacing="0">
+    <!--选定目标单元格，选择合并方式，指定合并单元格数量，删除多余单元格-->
+    <tr><th>姓名</th> <th>性别</th> <th>年龄</th></tr>
+    <!--跨列合并-->
+    <tr><td>刘德华</td> <td colspan="2">跨列合并单元格</td></tr>
+    <tr><td>张学友</td> <td>男</td> <td>50</td></tr>
+    <!--跨行合并-->
+    <tr><td rowspan="2">跨行合并</td> <td>男</td> <td>50</td></tr>
+    <tr>                            <td>男</td> <td>50</td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,18 @@
+
+
+os:
+得到当前python的目录             os.getcwd()
+获取当前目录下所有文件             os.listdir()
+删除一个文件                     os.remove()
+删除多个目录                     os.removedirs(r'c:\python')
+检验给出路径是否为一个文件          os.path.isfile()
+检验给出路径是否为一个目录          os.path.isdir()
+检验给出路径是否存在               os.path.exists()
+获取绝对路径                      os.path.abspath()
+获取路径名                        os.path.dirname()
+获取文件名                        os.path.basename()
+重命名                           os.rename(old,new)
+创建多级目录                      os.makedirs()
+创建单个目录                      os.mkdir()
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后代选择器</title>
+    <style>
+        /*将ol中的li标签内容改为pink*/
+        ol li {
+            color: pink;
+        }
+        /*将ol中的li中的a标签内容改为red*/
+        ol li a {
+            color: red;
+        }
+
+        .nav li {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<ol>
+    <li>我是ol的孩子</li>
+    <li>我是ol的孩子</li>
+    <li>我是ol的孩子</li>
+    <li><a href=“#">我是孙子</a></li>
+</ol>
+<ul class="nav">
+    <li>我是ul的孩子</li>
+    <li>我是ul的孩子</li>
+    <li>我是ul的孩子</li>
+</ul>
+</body>
+</html>

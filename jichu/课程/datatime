@@ -1,0 +1,5 @@
+d = datetime.datetime.now()        返回当前datetime日期类型
+    d.today()  当前时间
+
+时间运算   d + dayetime.timedelta()
+d.replace(year=   ,month=  )

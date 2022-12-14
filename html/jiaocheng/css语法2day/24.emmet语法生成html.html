@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>emmet生成html</title>
+</head>
+<body>
+<!--div*10  +tab-->
+div*10
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<!--ul>li  >是左边标签包含右边标签-->
+ul>li
+<ul>
+    <li></li>
+</ul>
+<!--div+p-->
+div+p
+<div></div>
+<p></p>
+<!--.class名 直接生成class="class名"的div   #id 直接生成id="id"的div-->
+<!-- . 前面加标签名  不加默认是div-->
+.red  <div class="red"></div>
+#sex  <div id="sex"></div>
+p.red   <p class="red"></p>
+
+ul>li#ids
+<ul>
+    <li id="ids"></li>
+</ul>
+
+<!--div 类名自增长-->
+.demo$*5
+<div class="demo1"></div>
+<div class="demo2"></div>
+<div class="demo3"></div>
+<div class="demo4"></div>
+<div class="demo5"></div>
+
+<!--生成标签内默认显示文字-->
+div{1234567}
+<div>1234567</div>
+
+div{qqqq$}*5
+<div>qqqq1</div>
+<div>qqqq2</div>
+<div>qqqq3</div>
+<div>qqqq4</div>
+<div>qqqq5</div>
+</body>
+</html>

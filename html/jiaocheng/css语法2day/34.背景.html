@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景</title>
+    <style>
+        /*背景颜色*/
+        .bccolor {
+            /* background-color: transparent; (默认)透明色*/
+            width: 200px;
+            height: 200px;
+            /*background-color: transparent;*/
+            background-color: red;
+        }
+        /*背景图片*/
+        .bcimg {
+            width: 600px;
+            height: 500px;
+            background-image: url("../html语法/06.综合案例（圣诞）/imgs/t2.jpg");
+        /*背景平铺*/
+            /*background-repeat: no-repeat; 背景不平铺*/
+            /*background-repeat: repeat; 背景平铺(默认)*/
+            /*background-repeat: repeat-x;背景水平平铺*/
+            /*background-repeat: repeat-y;背景竖直平铺*/
+        }
+        .bcposition {
+            /*background-position:x y   改变图片在背景的位置  left|center|right top|center|bottom*/
+            width: 1000px;
+            height: 1000px;
+            background-color: pink;
+            background-image: url("../html语法/06.综合案例（圣诞）/imgs/t2.jpg");
+            background-repeat: no-repeat;
+            /*background-position:方位名词    第二个参数省略默认是center*/
+            /*background-position: center top;*/
+
+            /*background-position:精确单位    第二个参数省略默认是center*/
+            /*第一个值一定为x 第二个值一定是y*/
+            /*x:距离最左侧的距离 y:距离最上端的距离*/
+            /*background-position: 20px 50px;*/
+
+            /*第一个值一定为x 第二个值一定是y*/
+            /*background-position:混合单位    第二个参数省略默认是center*/
+            background-position: 50px top;
+        }
+    </style>
+</head>
+<body>
+<div class="bccolor"></div>
+<div class="bcimg"></div>
+<div class="bcposition"></div>
+</body>
+</html>

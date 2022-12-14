@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字体属性</title>
+    <style>
+        /*字体设置*/
+        h2 {
+            font-family: '思源宋体';
+        }
+        /*字体大小*/
+        /*body 应用整个页面的元素 标题大小按照比例缩放 需要单独设置*/
+        /*body {font-size: 132px;}*/
+        .font18{
+            font-size: 18px;
+        }
+        /*字体粗细  bold/700加粗 normal/400不加粗 */
+        .bold {
+            font-weight: bold;
+        }
+        /*文本风格  intalic斜体  normal默认*/
+        .style {
+            font-style: italic;  /*斜体*/
+        }
+        /*符合属性*/
+        div {
+            /*font: font-style font-width font-size/line-height font-family;*/
+            /*不能更换顺序*/
+            /*font-size font-family 必须存在*/
+            font: italic bold 20px/10px '思源宋体';
+        }
+    </style>
+</head>
+<body>
+    <h2>标题</h2>
+    <p class="font18">12345678</p>
+    <p class="bold">12345678</p>
+    <p>1234<span class="bold">5</span>678</p>
+    <p class="style">12345678</p>
+    <p>12345678</p>
+    <p>12345678</p>
+    <div>123456789</div>
+</body>
+</html>

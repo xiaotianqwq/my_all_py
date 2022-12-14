@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圆角矩形</title>
+    <style>
+        .yjjx1 {
+            width: 300px;
+            height: 200px;
+            background-color: pink;
+            /*圆角矩形  radius圆的半径*/
+            border-radius: 10px;
+        }
+        .yjjx2 {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            /*圆角矩形  radius圆的半径是高度的一半*/
+            border-radius: 50px;
+        }
+        .yx {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /*圆形  radius圆的半径是正方形边长的一半*/
+            /*border-radius: 100px;*/
+            border-radius: 50%;
+        }
+        .btdyj {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /*            左上角 右上角 右下角 左下角   顺时针*/
+            /*border-radius: 10px 20px 30px 40px;*/
+            /*           左上右下 右上左下    对角线*/
+            /*border-radius: 10px 40px;*/
+            /*单独设置一个角  先上下后左右*/
+            border-top-left-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<p>一个圆角矩形:</p>
+<div class="yjjx1"></div>
+<br>
+<div class="yjjx2"></div>
+<p>一个圆形:</p>
+<div class="yx"></div>
+<p>不同的圆角</p>
+<div class="btdyj"></div>
+</body>
+</html>

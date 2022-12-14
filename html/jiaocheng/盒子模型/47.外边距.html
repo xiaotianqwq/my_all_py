@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>外边距</title>
+    <style>
+        /*margin 一个盒子的外边距 （盒子与盒子之间的距离）*/
+        .one {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-bottom: 20px;
+        }
+        .two {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 30px;
+        }
+        .three {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /*块级盒子水平居中*/
+            margin: 10px auto;
+        }
+        .sense {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /*块级盒子水平居中*/
+            margin: 0 auto;
+            /*盒子中的文字居中
+              条件： 盒子指定了高度
+                    左右外边距为auto
+              块级元素水平居中 行内元素和行内块元素居中给父元素添加 text-align: center; 即可*/
+            text-align: center;
+        }
+
+        /*嵌套块元素塌陷*/
+        .father {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            margin-top: 50px;
+            /*嵌套块元素塌陷  父元素增加overflow: hidden;条件*/
+            overflow: hidden;
+        }
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin-top: 100px;
+        }
+    </style>
+
+</head>
+<body>
+<!--会出现外边距合并-->
+<div class="one">1</div>
+<div class="two">2</div>
+<div class="three">3</div>
+<div class="sense">
+    <p>我是一句话</p>
+</div>
+<hr>
+<h3>嵌套块元素塌陷</h3>
+<div class="father">
+    <div class="son"></div>
+</div>
+</body>
+</html>

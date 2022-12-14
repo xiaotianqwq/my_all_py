@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style>
+        /*链接伪类顺序不能换 必须遵守LVHA*/
+        /*在body中设置颜色属性链接标签不生效 需要单独设置*/
+        /*未访问的链接 a:link*/
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+        /*访问过的链接 a:visited*/
+        a:visited {
+            color: orange;
+        }
+        /*鼠标位于其上方的链接 a:hover*/
+        a:hover {
+            color: blue;
+        }
+        /*鼠标按下还没有弹起的链接 a:active*/
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<a href="#">小猪佩奇</a>
+</body>
+</html>
